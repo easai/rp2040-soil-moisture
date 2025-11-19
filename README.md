@@ -24,6 +24,30 @@ This project focuses on soil moisture sensing and persistent program execution.
 - MicroPython firmware for RP2040
 - Thonny IDE or mpremote for file upload
 
+## Soil Moisture Sensor
+- Signal pin → GPIO26 (ADC0)
+- VCC → 3.3V
+- GND → GND
+
+## Potentiometer (Threshold Control)
+- Wiper pin → GPIO27 (ADC1)
+- VCC → 3.3V
+- GND → GND
+
+## LED Indicator
+- The onboard LED on RP2040-Zero is a **WS2812 Neopixel**, not a simple GPIO pin.
+- Connect an external LED to the GPIO15 pin with a resistor.
+
+## Summary Table
+
+| Component              | RP2040-Zero Pin | Notes                                      |
+|------------------------|-----------------|--------------------------------------------|
+| Soil moisture sensor   | GPIO26 (ADC0)   | Analog input                               |
+| Potentiometer          | GPIO27 (ADC1)   | Analog input for threshold                 |
+| LED                    | GPIO15          | Use with resistor                          |
+| Sensor VCC             | 3.3V            | Power supply                               |
+| Sensor GND             | GND             | Common ground                              |
+
 ## Installation
 
 1. Flash MicroPython firmware onto the RP2040-Zero  
