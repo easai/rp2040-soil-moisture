@@ -1,5 +1,7 @@
 # RP2040-Zero Soil Moisture Program
 
+<img src="https://github.com/easai/rp2040-soil-moisture/blob/main/capacitive-soil-moisture-sensor-v1.2.jpeg" width="300" />
+
 This repository documents a MicroPython workflow for the RP2040-Zero board.  
 It is intended for soil moisture monitoring projects and demonstrates how to calibrate sensors, store thresholds, and run programs autonomously after reset.
 
